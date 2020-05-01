@@ -21,6 +21,7 @@ public class HelloWorldController {
     @GetMapping("/helloUser/{username}")
     public String helloUser(@PathVariable("username") String userName) {
         return "Hello " + userName + " to AWS CodeStar";
+    }
     
 
     @RequestMapping(method = RequestMethod.GET)
