@@ -1,0 +1,8 @@
+@Controller
+public class GreetController {
+
+@GetMapping("/helloUser/{username}")
+    public String helloUser(@PathVariable("username") String userName) {
+        return "Hello " + userName + " to JWT World!";
+    }
+}
