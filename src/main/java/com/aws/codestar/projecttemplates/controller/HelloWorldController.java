@@ -17,6 +17,11 @@ public class HelloWorldController {
     public HelloWorldController(final String siteName) {
         this.siteName = siteName;
     }
+    
+    @GetMapping("/helloUser/{username}")
+    public String helloUser(@PathVariable("username") String userName) {
+        return "Hello " + userName + " to AWS CodeStar";
+    
 
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView helloWorld() {
